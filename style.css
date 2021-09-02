@@ -1,0 +1,370 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Roboto , san-serif;
+	line-height: 1.5em;
+}
+/*---Welcome Php ---*/
+.container{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.container .background, .home-screen .background{
+	width: 100%;
+	height: 100vh;
+	background: url(img/medical.jpg);
+	position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: -2;
+	opacity: 0.7;
+}
+.container .link h1, .container .link a{
+	margin: 1em 0;
+}
+.container .link a{
+	text-decoration: none;
+	padding: 10px 30px;
+	background: rgba(255,255,255,0.2);
+	border-radius: 4px;
+	border: 1px solid #222;
+	color: #222;
+}
+.container .link a:hover{
+	transform : scale(1.5);
+	background: #22313f;
+	color: #fff;
+	transition: transform 0.3s,background 0.3s, color 0.3s;
+}
+.login-form{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+}
+.form-container{
+	width: 400px;
+	height: 300px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	flex-direction: column;
+}
+.form-container form{
+	width: 90%;
+}
+.form-container input{
+	text-align: center;
+	width: 100%; 
+	height: 40px;
+	margin: 10px 0;
+	font-size: 14px;
+	padding: 0;
+}
+/*----nav menus ------*/
+.site-header{
+	width: 100%;
+	height: auto;
+	background-color: #22313f;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+.site-header ul, .site-header li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 10px;
+	text-align: center;
+}
+.site-header ul li a{
+	text-decoration: none;
+	text-align: center;
+	font-weight: 900;
+	display: block;
+	font-size: 12px;
+	color: #c5eff7;
+	width: 90px;
+	padding: 0 5px;
+}
+.site-header ul li a:hover{
+	background-color: #34495e;
+}
+.home-screen{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+img.icons {
+    display: block;
+    margin: 0 auto;
+}
+/*--- patient ---*/
+.patient-contain{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+}
+.container-list{
+	width: 30%;
+	height: 100vh;
+	background-color: #999;
+	display: flex;
+	flex-direction: column;
+}
+.form-search{
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+}
+.search-container{
+	height: 70px;
+}
+.patient-list{
+	width: 90%;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	height: 60%;
+}
+.button-list{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+.button-list button{
+	outline: none;
+	padding: 10px 15px;
+	width: auto;
+	text-align: center;
+	background-color: #22313f;
+	color: #c5eff7;
+	margin: 5px 0;
+	border: none;
+	border-radius: 5px;
+	font-size: 12px;
+	font-weight: 900;
+}
+.button-list button:hover{
+	background-color: #34495e;
+}
+.patient-list .title{
+	background-color: #22313f;
+	color: #c5eff7;
+	font-size: 12px;
+	font-weight: 800;
+}
+.patient-list .title span{
+	padding: 5px;
+}
+.form-search input#search-patient{
+	width: 85%;
+	margin: auto;
+	height: 20px;
+}
+.form-search #search-btn{
+	height: 25px;
+}
+.patient-infos{
+	width: 70%;
+	height: 100vh;
+	background-color: #eee;
+}
+.patient-infos .tab-link{
+	padding: 5px 13px;
+	margin: 0;
+}
+#addnew{
+	display: none;
+	float: left;
+}
+#update{
+	display: none;
+	float: left;
+}
+.tab-pane .tab-form{
+	display: flex;
+	flex-direction: column;
+}
+.tab-pane .tab-form input{
+	height: 20px;
+	width: 40%;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.tab-pane .tab-form label{
+	width: 100px;
+	float: left;
+	margin-top: 10px;
+	font-size: 12px;
+	font-weight: 900;
+	margin-left: 10px;
+}
+.short-input{
+	width: 20% !important;
+	margin-top: 10px;
+	height: 20px;
+}
+.buttons{
+	width: 50px !important;
+}
+.button-group{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.button-group input{
+	padding: 5px 10px;
+	margin: 0 10px;
+	height: auto !important;
+	width: auto !important;
+}
+ #person_info{
+
+ }
+.patient_name{
+	cursor: pointer;
+}
+.patient_name:hover{
+	background-color: #eee;
+}
+/*--- vitals -----*/
+#header-table, #vitals-table, #med-table, #dia-table{
+	width: 90%;
+	border: 1px solid #999;
+}
+#header-table th{
+	text-align: center;
+	width: 100px;
+	background-color: #22313f;
+	color: #c5eff7;
+	font-size: 12px;
+}
+
+#vitals-table tr td, #dia-table tr td{
+	text-align: center;
+	width: 100px;
+}
+.vitals-form, .med-form-contain, .diagnosis-contain{
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 81%;
+	height: auto;
+	padding: 20px;
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+}
+.vitals-contain , .med-contain, .dia-contain{
+	width: 500px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 3px;
+}
+#vital_form, #med-form, #dia-form{
+	display: flex;
+	flex-direction: column;
+}
+#vital_form span label, #med-form span label, #dia-form span label{
+	float: left;
+	clear: both;
+	margin: 10px 0;
+}
+#add_new_vitals, #add_new_med, #add_new_dia{
+	margin-top: 20px;
+}
+.vitals-contain input, .med-form-contain input, .diagnosis-contain input{
+	margin: 10px 0;
+	float: right;
+}
+.vitals-contain .div-header, .med-form-contain .div-header, .diagnosis-contain .div-header{
+	width: 100%;
+	height: 20px;
+	background-color: #22313f;
+	margin: 0 !important;
+}
+.v-id, .m-id, .d-id{
+	display: none;
+}
+.inner-data, .med-data, .dia-data{
+	cursor: pointer;
+}
+.inner-data:hover, .active, .med-data:hover, .dia-data:hover{
+	background-color: #89c4f4;
+}
+/*med section some from top on vitals*/
+#med-table tr td{
+	text-align: center;
+	width: 200px;
+}
+/*--- schedule ui design ---*/
+.dash-container{
+	width: 80%;
+	margin: 0 auto;
+}
+.dash-container .links li{
+	display: inline-block;
+}
+.header-table{
+	width: 100%;
+}
+.header-table th{
+	text-align: center;
+	width: 100px;
+	background-color: #22313f;
+	color: #c5eff7;
+	font-size: 12px;
+}
+/*--- custom css jquery ui -----*/
+#tab li a{
+	color: #c5eff7;
+}
+#tab li{
+	background-color: #34495e;
+	color: #fff;
+}
+li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active a{
+	color: #222 !important;
+	outline: none;
+}
+#tab li.ui-tabs-active{
+	background-color: #fff;
+	color: #222;
+	outline: none;
+}
+span.ui-icon.ui-icon-circle-triangle-e {
+    width: 0 !important;
+    height: 0 !important;
+    border-top: 9px solid transparent !important;
+    border-bottom: 8px solid transparent !important;
+    border-left: 19px solid #22313f !important;
+}
+span.ui-icon.ui-icon-circle-triangle-w {
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent !important;
+    border-bottom: 8px solid transparent !important;
+    border-right: 19px solid #22313f !important;
+}
